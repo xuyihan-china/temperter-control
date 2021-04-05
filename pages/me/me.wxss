@@ -1,0 +1,73 @@
+.image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  padding-top:20px;
+}
+
+.name {
+  text-align: center;
+  padding-top:10px;
+}
+
+.login{
+  background: #EA5149;
+  width: 60%;
+  margin-top: 100px;
+  color: #ffffff;
+}
+.top-text{
+  padding-bottom: 3vh;
+  text-align: center;
+}
+.text{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.top-three{
+  border-radius: 25px;
+  background-color: #ffd591;
+  margin-bottom: 3vh;
+}
+.devices_summary {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  
+}
+.device_list {
+  height: 300px;
+  margin: 50px 5px;
+  margin-top: 0;
+  border: 1px solid #EEE;
+  border-radius: 15px;
+  width: auto;
+}
+.device_item {
+  border-bottom: 1px solid #EEE;
+  padding: 10px;
+  color: #666;
+}
+.device_item_hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+.connected_info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #F0F0F0;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-bottom: env(safe-area-inset-bottom);
+  font-size: 14px;
+  min-height: 100px;
+  box-shadow: 0px 0px 3px 0px;
+}
+.connected_info .operation {
+  position: absolute;
+  display: inline-block;
+  right: 30px;
+}

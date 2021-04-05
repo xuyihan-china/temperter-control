@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view>
+  <swiper class="swiper-container" indicator-dots="true" autoplay="true" >
+    <swiper-item class="swiper-item">
+      <image class="swiper-image"
+        src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1822553108,4188898144&fm=26&gp=0.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="swiper-image"
+        src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=761779578,1240317988&fm=26&gp=0.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="swiper-image"
+        src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.taogongyi.com.cn%2Fuploads%2Fallimg%2F200217%2F134H24Z5_0.jpg&refer=http%3A%2F%2Fwww.taogongyi.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1618802917&t=94957e4b8e2f7eb2edd8e6bfb35a90cf">
+      </image>
+    </swiper-item>
+  </swiper>
+  <view class="big-container1">
+    <view class="box1">
+      <text>启动设备</text>
+    </view>
+    <view class="container">
+      <view class="right button" bindtap="addLog" data-add="1">ON</view>
+      <view class="left button" bindtap="addLog" data-add="-1">OFF</view>
+    </view>
+  </view>
+  <view class="big-container2">
+    <form catchsubmit="formSubmit">
+      <view class="box1">设置温度区间（推荐21-24摄氏度）</view>
+      <input type="number" placeholder="请输入最低温度" class="input-text" name="min"></input>
+      <input type="number" placeholder="请输入最高温度" class="input-text" name="high"></input>
+      <button class="sendBtn" bindtap="addTemperture"  form-type="submit">发送</button>
+    </form>
+  </view>
+  <view class="big-container3">
+    <view class="box1">
+      <text>区域温度监测</text>
+    </view>
+    <view class="container2">
+      <view class="con2-text">区域1:  {{tempture1}}</view>
+      <view class="con2-text">  区域2:  {{tempture2}}</view>
+      <view class="con2-text">  区域3:  {{tempture3}}</view>
+      <view class="con2-text">  区域4:  {{tempture4}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<view class="box1">启动日志</view>
+<block wx:for="{{logs}}" wx:key="key">
+  <view class="log-item">
+    日期：{{item.date}} 状态：{{item.add}}
+  </view>
+</block>
+<view class="box1">温度设置记录</view>
+<block wx:for="{{temperture}}" wx:key="key">
+  <view class="log-item">
+    日期 {{item.date}} 最低: {{item.min}} 最高 {{item.high}}
+  </view>
+</block>
+
